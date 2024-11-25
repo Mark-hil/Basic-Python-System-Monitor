@@ -14,7 +14,7 @@ Python 3.6 or higher
 psutil library
 
 # Clone this repository:
-git clone https://github.com/yourusername/Basic-Python-System-Monitor.git
+git clone https://github.com/Mark-hil/Basic-Python-System-Monitor.git
 cd Basic-Python-System-Monitor
 
 # Install the required dependencies:
