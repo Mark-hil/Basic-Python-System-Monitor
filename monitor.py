@@ -4,10 +4,10 @@ import psutil
 import os
 
 
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-# Load environment variables from the .env file
-load_dotenv()
+# # Load environment variables from the .env file
+# load_dotenv()
 ''
 api_key = os.getenv("MAILJET_API_KEY")
 api_secret = os.getenv("MAILJET_API_SECRET")
@@ -49,7 +49,7 @@ def send_alert(subject, message):
 
         result = mailjet.send.create(data=data)
 
-        print(f"Email sent: {result.json()}")
+        print(f"Email sent: {result.status_code}")
 
     except Exception as e:
 
